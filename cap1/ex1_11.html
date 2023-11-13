@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // Ex 1
+        // const meuNumero = parseInt(prompt("Qual o número da sua residência? "))
+
+        // const numeroAnterior = meuNumero - 1
+        // const numeroPosterior = meuNumero + 1
+
+        // alert(`O número da sua residência é: ${meuNumero}, ${numeroAnterior} vizinho anterior, ${numeroPosterior} vizinho posterior.`)
+
+        // //Ex 2
+        // const valorDaConta = Number(prompt("Qual o valor da conta? "))
+        // const pessoas = parseInt(prompt("Quantas pessoas vão pagar? "))
+
+        // const valorPorCliente = (valor, pessoas) => {
+        //     return valor / pessoas
+        // }
+
+        // alert(`
+        //     Valor da conta: ${valorDaConta}\n
+        //     Quantidade de clientes: ${pessoas}\n
+        //     Valor por cliente: R$${valorPorCliente(valorDaConta, pessoas)}
+        // `)
+
+        // // Ex 3
+        // const valorProduto = Number(prompt("Informe o valor do produto: "))
+10
+        // const valorProdutoAVista = valorProduto - (valorProduto * 0.10)
+        // const valorProdutoParcelado = valorProduto / 3
+
+        // alert(`
+        //     Preço: R$${valorProduto}
+        //     À vista: R$${valorProdutoAVista}
+        //     Ou 3X de: R$${valorProdutoParcelado}
+        // `)
+
+
+        // Ex 4
+        const nota1 = parseFloat(prompt("Nota 1: "))
+        const nota2 = parseFloat(prompt("Nota 2: "))
+
+        const notas = []
+        notas.push(nota1, nota2)
+
+        const mediaNotas = (notas) => {
+            return (notas.reduce((acc, nota) =>  acc + nota , 0) / notas.length)
+        }
+
+        console.log(mediaNotas(notas))
+
+        alert(`
+        Nota 1: ${nota1}\n
+        Nota 2: ${nota2}\n
+        Média: ${mediaNotas(notas)}
+        `)
+    </script>
+</body>
+</html>
